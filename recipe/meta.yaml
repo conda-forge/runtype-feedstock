@@ -1,5 +1,5 @@
 {% set name = "runtype" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/runtype-{{ version }}.tar.gz
-  sha256: 7670246886320b32f935bf9a2caf7b68d69b7608fa405447ca2f11632d9ec84c
+  sha256: 2ef50cf46470e8939682ac7d82bc3e4a9137d270c83302762c1cc3fbe5020560
 
 build:
   noarch: python
