@@ -1,11 +1,11 @@
-About runtype
-=============
+About runtype-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/runtype-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/erezsh/runtype
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/runtype-feedstock/blob/main/LICENSE.txt)
 
 Summary: Type dispatch and validation for run-time Python
 
