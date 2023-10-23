@@ -1,5 +1,5 @@
 {% set name = "runtype" %}
-{% set version = "0.3.5" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,24 +8,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/runtype-{{ version }}.tar.gz
-  sha256: b738d4a546c300ccec630392b667762c5985ab4ab66e280feb6ef62af76248a3
+  sha256: dd950a9077b37ef1b9e9c2287aac5d73f2d9a25a1cce62453445d7ff97ebec46
 
 build:
   noarch: python
   number: 0
   script:
-    # Removing pyproject.toml here due to pip bug
-    - {{ PYTHON }} -c "__import__('os').unlink('pyproject.toml')"
     - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - poetry
-    - python >=3.6
+    - poetry-core >=1.0.0
+    - python >=3.6,<4.0
   run:
     - dataclasses
-    - python >=3.6
+    - python >=3.6,<4.0
 
 test:
   imports:
